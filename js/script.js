@@ -21,9 +21,15 @@ const subBtn = document.querySelector("#formButton");
 const uploadForm = document.querySelector("form");
 const newBook = document.querySelector(".newBook");
 const addBtn = document.querySelector("button.add");
-inputsArr = new Array(...document.querySelectorAll("input"));
+let inputsArr = new Array(...document.querySelectorAll("input"));
 inputsArr = inputsArr.map(function (e) {
   e.addEventListener('input', getFormValue);
+});
+const resetBtn = document.querySelector("#reset");
+resetBtn.addEventListener('click', function (e) {
+  bookArr = null;
+  newBook.classList.toggle("hidden");
+  createBtn.classList.toggle("hidden");
 });
 
 createBtn.addEventListener('click', function (e) {
