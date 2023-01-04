@@ -15,3 +15,8 @@ Book.prototype.printDetail = function () {
   return `${this.name}, written by ${this.author}, ${this.pages} pages, ` + 
   `${this.haveRead ? "read" : "not yet read"}`;
 }
+
+subBtn = document.querySelector("#formButton");
+subBtn.addEventListener('click', function (e) {
+
+});
