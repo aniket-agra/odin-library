@@ -1,4 +1,4 @@
-let bookArr = [];
+let bookArr;
 
 function addBook(book) {
   bookArr.push(book);
@@ -16,8 +16,17 @@ Book.prototype.printDetail = function () {
   `${this.haveRead ? "read" : "not yet read"}`;
 }
 
+createBtn = document.querySelector(".create button");
 subBtn = document.querySelector("#formButton");
 uploadForm = document.querySelector("form");
+newBook = document.querySelector(".newBook");
+
+createBtn.addEventListener('click', function (e) {
+  bookArr = [];
+  newBook.classList.toggle("hidden");
+  createBtn.classList.toggle("hidden");  
+});
+
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
   e.preventDefault();
