@@ -16,11 +16,11 @@ Book.prototype.printDetail = function () {
   `${this.haveRead ? "read" : "not yet read"}`;
 }
 
-createBtn = document.querySelector(".create button");
-subBtn = document.querySelector("#formButton");
-uploadForm = document.querySelector("form");
-newBook = document.querySelector(".newBook");
-addBtn = document.querySelector("button.add");
+const createBtn = document.querySelector(".create button");
+const subBtn = document.querySelector("#formButton");
+const uploadForm = document.querySelector("form");
+const newBook = document.querySelector(".newBook");
+const addBtn = document.querySelector("button.add");
 inputsArr = new Array(...document.querySelectorAll("input"));
 inputsArr = inputsArr.map(function (e) {
   e.addEventListener('input', getFormValue);
