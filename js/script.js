@@ -32,6 +32,10 @@ resetBtn.addEventListener('click', function (e) {
   createBtn.classList.toggle("hidden");
 });
 
+function getFormValue(e) {
+
+};
+
 createBtn.addEventListener('click', function (e) {
   bookArr = [];
   newBook.classList.toggle("hidden");
