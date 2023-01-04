@@ -17,6 +17,7 @@ Book.prototype.printDetail = function () {
 }
 
 subBtn = document.querySelector("#formButton");
+uploadForm = document.querySelector("form");
 subBtn.addEventListener('click', function (e) {
-
+  uploadForm.classList.toggle("hidden");
 });
