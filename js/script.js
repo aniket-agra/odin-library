@@ -20,4 +20,5 @@ subBtn = document.querySelector("#formButton");
 uploadForm = document.querySelector("form");
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
+  e.preventDefault();
 });
