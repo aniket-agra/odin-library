@@ -20,11 +20,16 @@ createBtn = document.querySelector(".create button");
 subBtn = document.querySelector("#formButton");
 uploadForm = document.querySelector("form");
 newBook = document.querySelector(".newBook");
+addBtn = document.querySelector("button.add");
 
 createBtn.addEventListener('click', function (e) {
   bookArr = [];
   newBook.classList.toggle("hidden");
   createBtn.classList.toggle("hidden");  
+});
+
+addBtn.addEventListener('click', function (e) {
+  uploadForm.classList.toggle("hidden");
 });
 
 subBtn.addEventListener('click', function (e) {
