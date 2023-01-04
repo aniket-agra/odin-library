@@ -21,6 +21,10 @@ subBtn = document.querySelector("#formButton");
 uploadForm = document.querySelector("form");
 newBook = document.querySelector(".newBook");
 addBtn = document.querySelector("button.add");
+inputsArr = new Array(...document.querySelectorAll("input"));
+inputsArr = inputsArr.map(function (e) {
+  e.addEventListener('input', getFormValue);
+});
 
 createBtn.addEventListener('click', function (e) {
   bookArr = [];
