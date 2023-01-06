@@ -1,5 +1,5 @@
 let bookArr;
-let bookData = {};
+let bookData;
 
 function addBook(book) {
   bookArr.push(book);
@@ -45,6 +45,7 @@ createBtn.addEventListener('click', function (e) {
 
 addBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
+  bookData = {};
 });
 
 subBtn.addEventListener('click', function (e) {
