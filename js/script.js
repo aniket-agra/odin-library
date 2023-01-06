@@ -1,4 +1,5 @@
 let bookArr;
+let bookData = {title: null, author: null, pages: null, status: null};
 
 function addBook(book) {
   bookArr.push(book);
@@ -23,7 +24,7 @@ const newBook = document.querySelector(".newBook");
 const addBtn = document.querySelector("button.add");
 let inputsArr = new Array(...document.querySelectorAll("input"));
 inputsArr = inputsArr.map(function (e) {
-  e.addEventListener('input', getFormValue);
+  e.addEventListener('change', getFormValue);
 });
 const resetBtn = document.querySelector("#reset");
 resetBtn.addEventListener('click', function (e) {
@@ -33,7 +34,7 @@ resetBtn.addEventListener('click', function (e) {
 });
 
 function getFormValue(e) {
-
+  bookData[e.target.getAttribute("name")] = e.target.value;
 };
 
 createBtn.addEventListener('click', function (e) {
