@@ -1,5 +1,5 @@
 let bookArr;
-let bookData = {title: null, author: null, pages: null, status: null};
+let bookData = {};
 
 function addBook(book) {
   bookArr.push(book);
