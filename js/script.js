@@ -9,7 +9,7 @@ function Book(name, author, pages, haveRead) {
   this.name = name;
   this.author = author;
   this.pages = Number(pages);
-  this.haveRead = Boolean(haveRead);
+  this.haveRead = haveRead === "Have Read" ? true : false;
 }
 
 Book.prototype.printDetail = function () {
@@ -50,5 +50,6 @@ addBtn.addEventListener('click', function (e) {
 
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
+  bookArr.push(new Book(bookData["title"], bookData["author"], bookData["pages"], bookData["status"]));
   e.preventDefault();
 });
