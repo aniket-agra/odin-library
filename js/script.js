@@ -50,6 +50,9 @@ addBtn.addEventListener('click', function (e) {
 
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
+  document.querySelectorAll("form > input").forEach(function (e, i) {
+    e.value = (i === 0 || i === 1) ? "" : (i === 2 ? "0" : "Have Read");
+  });
   bookArr.push(new Book(bookData["title"], bookData["author"], bookData["pages"], bookData["status"]));
   e.preventDefault();
 });
