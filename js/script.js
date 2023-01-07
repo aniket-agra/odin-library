@@ -5,6 +5,20 @@ function addBook(book) {
   bookArr.push(book);
 }
 
+function generateBookCard(book) {
+  let bookDiv = document.createElement("div");
+  bookDiv.classList.add("book");
+  for(let key in book) {
+    if (book.hasOwnProperty(key)) {
+      let elem = document.createElement("div");
+      elem.classList.add(key);
+      elem.textContent = book[key];
+      bookDiv.appendChild(elem);
+    }
+  }
+  return bookDiv;
+}
+
 function Book(name, author, pages, haveRead) {
   this.name = name;
   this.author = author;
