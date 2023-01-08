@@ -4,7 +4,14 @@ let bookData;
 function addBook(book) {
   bookArr.push(book);
   let libDiv = document.querySelector("div.library");
-  libDiv.appendChild(generateBookCard(book));
+  if (libDiv === null) {
+    let newLibDiv = document.createElement("div");
+    newLibDiv.classList.add("library");
+    newLibDiv.appendChild(generateBookCard(book));
+    document.querySelector("div.newBook").insertBefore(newLibDiv, uploadForm);
+  }
+  else
+    libDiv.appendChild(generateBookCard(book));
 }
 
 function generateBookCard(book) {
