@@ -3,6 +3,8 @@ let bookData;
 
 function addBook(book) {
   bookArr.push(book);
+  let libDiv = document.querySelector("div.library");
+  libDiv.appendChild(generateBookCard(book));
 }
 
 function generateBookCard(book) {
@@ -71,6 +73,6 @@ subBtn.addEventListener('click', function (e) {
   document.querySelectorAll("form > input").forEach(function (e, i) {
     e.value = (i === 0 || i === 1) ? "" : (i === 2 ? "0" : "Have Read");
   });
-  bookArr.push(new Book(bookData["title"], bookData["author"], bookData["pages"], bookData["status"]));
+  addBook(new Book(bookData["title"], bookData["author"], bookData["pages"], bookData["status"]));
   e.preventDefault();
 });
