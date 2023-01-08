@@ -14,10 +14,13 @@ function generateBookCard(book) {
     if (book.hasOwnProperty(key)) {
       let elem = document.createElement("div");
       elem.classList.add(key);
-      elem.textContent = book[key];
+      elem.textContent = `${key} : ${book[key]}`;
       bookDiv.appendChild(elem);
     }
   }
+  let deleteButton = document.createElement("button");
+  deleteButton.textContent = "Remove";
+  bookDiv.appendChild(deleteButton);
   return bookDiv;
 }
 
