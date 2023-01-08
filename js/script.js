@@ -16,6 +16,10 @@ function generateBookCard(book) {
       bookDiv.appendChild(elem);
     }
   }
+  bookDiv.style.border = "1px solid black";
+  bookDiv.style.borderRadius = "4px";
+  bookDiv.style.display = "flex";
+  bookDiv.style.flexDirection = "column";
   return bookDiv;
 }
 
