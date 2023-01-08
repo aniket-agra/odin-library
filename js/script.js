@@ -20,6 +20,9 @@ function generateBookCard(book) {
   }
   let deleteButton = document.createElement("button");
   deleteButton.textContent = "Remove";
+  deleteButton.addEventListener('click', function (e) {
+  document.querySelector("div.library").removeChild((e.path[1]));
+  });
   bookDiv.appendChild(deleteButton);
   return bookDiv;
 }
