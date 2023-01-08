@@ -16,6 +16,11 @@
     </button>
   </div>
   <div class="newBook hidden">
+    <div class="library">
+      <!-- display current books -->
+      <!-- allow toggles for read status of each books
+      create button to delete a book -->
+    </div>
     <form action="https://httpbin.org/post" method="post" class="addBook hidden">
       <!-- form with upload button -->
       <!-- should get hidden after upload clicked to reveal bkg -->
@@ -29,11 +34,6 @@
       <input type="checkbox" name="status" id="status" value="Have Read">
       <button id = "formButton">Submit</button>
     </form>
-    <div class="library">
-      <!-- display current books -->
-      <!-- allow toggles for read status of each books
-      create button to delete a book -->
-    </div>
     <!-- add book button, should bring up form -->
     <button class = "add">Add book</button>
     <!-- Reset button visible always, should bring up create interface -->
