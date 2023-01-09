@@ -15,8 +15,8 @@
       Create Library
     </button>
   </div>
-  <div class="newBook">
-    <form action="https://httpbin.org/post" method="post" class="addBook">
+  <div class="newBook hidden">
+    <form action="https://httpbin.org/post" method="post" class="addBook hidden">
       <!-- form with upload button -->
       <!-- should get hidden after upload clicked to reveal bkg -->
       <label for="title">Title</label>
@@ -27,17 +27,12 @@
       <input type="number" name="pages" id="pages" value="0">
       <label for="status">Read?</label>
       <input type="checkbox" name="status" id="status" value="Have Read">
-      <button>Submit</button>
+      <button id = "formButton">Submit</button>
     </form>
-    <div class="library">
-      <!-- display current books -->
-      <!-- allow toggles for read status of each books
-      create button to delete a book -->
-    </div>
     <!-- add book button, should bring up form -->
     <button class = "add">Add book</button>
     <!-- Reset button visible always, should bring up create interface -->
-    <button type="submit">
+    <button id="reset" type="submit">
       Reset Library
     </button>
   </div>
