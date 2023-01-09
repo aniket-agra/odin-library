@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+}
+
+.library {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(2vw, 1fr));
+}
+
+.book {
+  border : 1px solid black;
+  border-radius : 4px;
+  display : flex;
+  flex-direction : column;
+  width : 8vw;
+  height: 8vw;
+  overflow: auto;
+}
