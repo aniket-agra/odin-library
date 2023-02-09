@@ -28,7 +28,8 @@ function generateBookCard(book) {
   let deleteButton = document.createElement("button");
   deleteButton.textContent = "Remove";
   deleteButton.addEventListener('click', function (e) {
-  document.querySelector("div.library").removeChild((e.path[1]));
+    console.log(e.target.parentElement);
+    document.querySelector("div.library").removeChild((e.path[1]));
   });
   bookDiv.appendChild(deleteButton);
   return bookDiv;
@@ -81,6 +82,7 @@ addBtn.addEventListener('click', function (e) {
 
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
+  // reset each field to its default value for re-capturing new book data
   document.querySelectorAll("form > input").forEach(function (e, i) {
     e.value = (i === 0 || i === 1) ? "" : (i === 2 ? "0" : "Have Read");
   });
