@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .hidden {
   display: none;
 }
@@ -6,6 +8,7 @@ body {
   background-image: url("../img/lib1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .library {
@@ -22,4 +25,16 @@ body {
   width : 8vw;
   height: 8vw;
   overflow: auto;
+}
+
+.credits {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  rotate: -90deg;
+}
+
+a:link {
+  color: white;
 }
