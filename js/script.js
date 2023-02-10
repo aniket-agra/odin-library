@@ -62,8 +62,9 @@ resetBtn.addEventListener('click', function (e) {
   let libDiv = document.querySelector("div.library");
   if (libDiv !== null && libDiv !== undefined)
     document.querySelector("div.newBook").removeChild(libDiv);
-  newBook.classList.toggle("hidden");
-  createBtn.classList.toggle("hidden");
+  uploadForm.classList.add("hidden");
+  newBook.classList.add("hidden");
+  createBtn.classList.remove("hidden");
 });
 
 function getFormValue(e) {
