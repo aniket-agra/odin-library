@@ -60,7 +60,8 @@ const resetBtn = document.querySelector("#reset");
 resetBtn.addEventListener('click', function (e) {
   bookArr = null;
   let libDiv = document.querySelector("div.library");
-  document.querySelector("div.newBook").removeChild(libDiv);
+  if (libDiv !== null && libDiv !== undefined)
+    document.querySelector("div.newBook").removeChild(libDiv);
   newBook.classList.toggle("hidden");
   createBtn.classList.toggle("hidden");
 });
