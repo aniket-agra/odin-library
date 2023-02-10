@@ -65,6 +65,8 @@ resetBtn.addEventListener('click', function (e) {
   uploadForm.classList.add("hidden");
   newBook.classList.add("hidden");
   createBtn.classList.remove("hidden");
+  document.querySelector("body").classList.toggle("lib2");
+  document.querySelectorAll(".credits").forEach(e => {e.classList.toggle("hidden")});
 });
 
 function getFormValue(e) {
@@ -75,6 +77,8 @@ createBtn.addEventListener('click', function (e) {
   bookArr = [];
   newBook.classList.toggle("hidden");
   createBtn.classList.toggle("hidden");  
+  document.querySelector("body").classList.toggle("lib2");
+  document.querySelectorAll(".credits").forEach(e => {e.classList.toggle("hidden")});
 });
 
 addBtn.addEventListener('click', function (e) {

@@ -12,6 +12,11 @@ body {
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body.lib2 {
+  background-image: url("../img/lib2.jpg"); 
+  background-repeat: repeat;
+}
+
 .create, .add {
   position: absolute;
   top: 45%;
