@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 .hidden {
   display: none;
@@ -16,6 +17,21 @@ body {
   top: 45%;
   left: 45%;
 }
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Pinyon Script', cursive, Roboto, sans-serif;
+  color: whitesmoke;
+  font-size: 3rem;
+  border: none;
+  border-radius: 8px;
+  padding:0.75rem 1.5rem 0.75rem 1.5rem;
+}
+
+.create button:hover {
+  scale: 1.15;
+}
+
 
 .library {
   display: grid;
