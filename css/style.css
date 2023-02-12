@@ -87,6 +87,7 @@ form button {
 
 form input[type = "checkbox"] {
   justify-self: start;
+  margin: 0;
 }
 
 #reset {
