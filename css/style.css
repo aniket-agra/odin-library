@@ -83,6 +83,7 @@ fieldset {
 form .close {
   grid-column: -2 / -1;
   justify-self: end;
+  margin-right: 2px;
 }
 
 button.close:hover {
