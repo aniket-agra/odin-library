@@ -67,7 +67,7 @@ form {
   border: 2px solid black;
   border-radius: 8px;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
@@ -81,8 +81,13 @@ form input {
 }
 
 form button {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 139, 81, 0.814);
   grid-column: 2 / 3;
+  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
 }
 
 form input[type = "checkbox"] {
