@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 .hidden {
-  display: none;
+  scale: 0;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 1s ease-in-out;
 }
 
 body.lib2 {
@@ -31,6 +32,7 @@ button {
   border: none;
   border-radius: 8px;
   padding:0.75rem 1.5rem 0.75rem 1.5rem;
+  transition: scale 1s ease-in-out;
 }
 
 button:hover {
@@ -70,6 +72,7 @@ form {
   padding-top: 20px;
   font-size: 1.2rem;
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+  transition: all 0.5s ease-in-out;
 }
 
 form label {
