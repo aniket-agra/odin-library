@@ -86,10 +86,14 @@ addBtn.addEventListener('click', function (e) {
   bookData = {};
 });
 
+document.querySelector("form .close").addEventListener('click', function (e) {
+  uploadForm.classList.toggle("hidden");
+})
+
 subBtn.addEventListener('click', function (e) {
   uploadForm.classList.toggle("hidden");
   // reset each field to its default value for re-capturing new book data
-  document.querySelectorAll("form > input").forEach(function (e, i) {
+  document.querySelectorAll("form input").forEach(function (e, i) {
     e.value = (i === 0 || i === 1) ? "" : (i === 2 ? "0" : "Have Read");
   });
   addBook(new Book(bookData["title"], bookData["author"], bookData["pages"], bookData["status"]));

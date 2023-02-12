@@ -19,15 +19,18 @@
     <form action="https://httpbin.org/post" method="post" class="addBook hidden">
       <!-- form with upload button -->
       <!-- should get hidden after upload clicked to reveal bkg -->
-      <label for="title">Title</label>
-      <input type="text" name="title" id="title" value="" required>
-      <label for="author">Author</label>
-      <input type="text" name="author" id="author" value="">
-      <label for="pages">Number of Pages</label>
-      <input type="number" name="pages" id="pages" value="0">
-      <label for="status">Read?</label>
-      <input type="checkbox" name="status" id="status" value="Have Read">
-      <button id = "formButton">Submit</button>
+      <button class="close">X</button>
+      <fieldset>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" value="" required>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" value="">
+        <label for="pages">Number of Pages</label>
+        <input type="number" name="pages" id="pages" value="0">
+        <label for="status">Read?</label>
+        <input type="checkbox" name="status" id="status" value="Have Read">
+        <button id = "formButton">Submit</button>
+      </fieldset>
     </form>
     <!-- add book button, should bring up form -->
     <button class = "add">Add book</button>
