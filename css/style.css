@@ -80,6 +80,7 @@ form input {
   grid-column: 2 / -1;
   border: 1px solid black;
   border-radius: 6px;
+  padding-left: 6px;
 }
 
 form button {
