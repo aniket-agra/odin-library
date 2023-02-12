@@ -87,6 +87,7 @@ addBtn.addEventListener('click', function (e) {
 });
 
 document.querySelector("form .close").addEventListener('click', function (e) {
+  e.preventDefault();
   uploadForm.classList.toggle("hidden");
 })
 
