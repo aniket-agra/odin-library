@@ -83,6 +83,11 @@ form input {
   padding-left: 6px;
 }
 
+input#pages {
+  width: 5rem;
+  /* 5rem corresponds to less than 1e8 pages according to current settings  */
+}
+
 form button {
   background-color: rgba(255, 139, 81, 0.814);
   grid-column: 2 / 3;
