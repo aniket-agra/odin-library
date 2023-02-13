@@ -17,20 +17,23 @@ function addBook(book) {
 function generateBookCard(book) {
   let bookDiv = document.createElement("div");
   bookDiv.classList.add("book");
-  for(let key in book) {
-    if (book.hasOwnProperty(key)) {
-      let elem = document.createElement("div");
-      elem.classList.add(key);
-      elem.textContent = `${key} : ${book[key]}`;
-      bookDiv.appendChild(elem);
-    }
-  }
   let deleteButton = document.createElement("button");
   deleteButton.textContent = "X";
   deleteButton.addEventListener('click', function (e) {
     document.querySelector("div.library").removeChild((e.target.parentElement));
   });
   bookDiv.appendChild(deleteButton);
+  let dataDiv = document.createElement("div");
+  dataDiv.classList.add("data");
+  for(let key in book) {
+    if (book.hasOwnProperty(key)) {
+      let elem = document.createElement("div");
+      elem.classList.add(key);
+      elem.textContent = `${key} : ${book[key]}`;
+      dataDiv.appendChild(elem);
+    }
+  }
+  bookDiv.appendChild(dataDiv);
   return bookDiv;
 }
 
