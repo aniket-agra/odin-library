@@ -18,13 +18,16 @@ body.lib2 {
   background-repeat: repeat;
 }
 
-.create, .add {
+.create {
   position: absolute;
   left: 45%;
+  top: 45%;
 }
 
-.create {
-  top: 45%;
+.add {
+  position: sticky;
+  bottom: 5%;
+  left: 45%;  
 }
 
 button {
