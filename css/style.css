@@ -48,8 +48,8 @@ button:hover {
 
 .library {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
   padding: 1vw;
 }
 
