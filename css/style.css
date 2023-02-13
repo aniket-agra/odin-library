@@ -47,13 +47,24 @@ button:hover {
 }
 
 .book {
+  background-color: white;
   border : 1px solid black;
   border-radius : 4px;
   display : flex;
   flex-direction : column;
-  width : 8vw;
-  height: 8vw;
+  justify-items: center;
+  max-width: 10vw;
+  max-height: 10vw;
   overflow: auto;
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+}
+
+.book button {
+  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  align-self: center;
 }
 
 form {
